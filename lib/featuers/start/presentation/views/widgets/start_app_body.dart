@@ -4,6 +4,7 @@ import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_images.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 import 'package:login_ui/featuers/login/presentation/views/login_view.dart';
+import 'package:login_ui/featuers/register/presentation/views/register_view.dart';
 import 'package:login_ui/featuers/start/presentation/views/widgets/custom_elevated_start_btm.dart';
 
 class StartAppBody extends StatelessWidget {
@@ -59,7 +60,12 @@ class StartAppBody extends StatelessWidget {
                 width: 22,
               ),
               CustomButtom(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return const RegisterView();
+                  }));
+                },
                 color: AppColors.mainColorTheme,
                 textColor: AppColors.secondTextColor,
                 title: 'Register',

@@ -6,6 +6,7 @@ import 'package:login_ui/core/widgets/custom_text_field.dart';
 import 'package:login_ui/core/widgets/social_media_widget_login_and_reg.dart';
 import 'package:login_ui/core/widgets/text_btm.dart';
 import 'package:login_ui/featuers/login/presentation/views/widgets/custom_text_field.dart';
+import 'package:login_ui/featuers/register/presentation/views/register_view.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -70,13 +71,22 @@ class LoginViewBody extends StatelessWidget {
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.025,
           ),
-          const BigElevatedBtm(
+          BigElevatedBtm(
+            onPressed: () {},
             text: 'Sign in',
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height * 0.02,
           ),
-          const TextBtm(
+          TextBtm(
+            onPressed: () {
+              Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute(builder: (context) {
+                return const RegisterView();
+              }), (route) {
+                return false;
+              });
+            },
             title: 'Create new account',
           ),
           SizedBox(

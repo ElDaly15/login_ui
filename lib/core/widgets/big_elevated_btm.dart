@@ -3,8 +3,10 @@ import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 
 class BigElevatedBtm extends StatelessWidget {
-  const BigElevatedBtm({super.key, required this.text});
+  const BigElevatedBtm(
+      {super.key, required this.text, required this.onPressed});
   final String text;
+  final void Function() onPressed;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
