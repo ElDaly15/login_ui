@@ -5,8 +5,13 @@ class OptionsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [],
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 12),
+      child: Column(
+        children: [
+          SafeArea(child: SizedBox()),
+        ],
+      ),
     );
   }
 }
