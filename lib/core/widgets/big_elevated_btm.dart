@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
+import 'package:login_ui/featuers/options/presentation/views/options_view.dart';
 
 class BigElevatedBtm extends StatelessWidget {
   const BigElevatedBtm(
@@ -15,7 +16,11 @@ class BigElevatedBtm extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
             minimumSize: const Size(double.infinity, 55),
             backgroundColor: AppColors.secondaryColorTheme),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+            return const OptionsView();
+          }));
+        },
         child: Text(
           text,
           style: TextStyles.font22SemiBold(context)

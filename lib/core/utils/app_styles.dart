@@ -1,12 +1,15 @@
 // (min , max) fontsize
+// ignore_for_file: depend_on_referenced_packages
+
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 abstract class TextStyles {
   static TextStyle font11Regular(BuildContext context) {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 11),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w400);
   }
 
@@ -14,7 +17,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 11),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w500);
   }
 
@@ -22,7 +25,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 11),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w600);
   }
 
@@ -30,7 +33,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 11),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.bold);
   }
 
@@ -38,7 +41,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 11),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w800);
   }
 
@@ -47,7 +50,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 12),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w400);
   }
 
@@ -55,7 +58,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 12),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w500);
   }
 
@@ -63,7 +66,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 12),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w600);
   }
 
@@ -71,7 +74,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 12),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.bold);
   }
 
@@ -79,7 +82,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 12),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w800);
   }
   // 12 Reguler And Bold Style --------------------------------------------------------------------------------------------------->
@@ -88,7 +91,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 14),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w400);
   }
 
@@ -96,7 +99,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 14),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w500);
   }
 
@@ -104,7 +107,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 14),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w600);
   }
 
@@ -112,7 +115,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 14),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.bold);
   }
 
@@ -120,7 +123,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 14),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w800);
   }
 
@@ -130,7 +133,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 18),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w400);
   }
 
@@ -138,7 +141,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 18),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w500);
   }
 
@@ -146,7 +149,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 18),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w600);
   }
 
@@ -154,7 +157,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 18),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.bold);
   }
 
@@ -162,7 +165,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 18),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w800);
   }
 
@@ -172,7 +175,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 20),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w400);
   }
 
@@ -180,7 +183,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 20),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w500);
   }
 
@@ -188,7 +191,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 20),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w600);
   }
 
@@ -196,7 +199,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 20),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.bold);
   }
 
@@ -204,7 +207,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 20),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w800);
   }
 
@@ -214,7 +217,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 22),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w400);
   }
 
@@ -222,7 +225,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 22),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w500);
   }
 
@@ -230,7 +233,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 22),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w600);
   }
 
@@ -238,7 +241,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 22),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.bold);
   }
 
@@ -246,7 +249,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 22),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w800);
   }
 
@@ -256,7 +259,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 24),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w400);
   }
 
@@ -264,7 +267,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 24),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w500);
   }
 
@@ -272,7 +275,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 24),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w600);
   }
 
@@ -280,7 +283,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 24),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.bold);
   }
 
@@ -288,7 +291,7 @@ abstract class TextStyles {
     return TextStyle(
         fontSize: getResponsiveFontSize(context, fontSize: 24),
         color: Colors.black,
-        fontFamily: 'Poppins',
+        fontFamily: isArabic() ? 'Cairo' : 'Poppins',
         fontWeight: FontWeight.w800);
   }
 
@@ -314,4 +317,8 @@ double getScaleFactor(context) {
   } else {
     return width / 2300;
   }
+}
+
+bool isArabic() {
+  return Intl.getCurrentLocale() == 'ar';
 }
