@@ -3,7 +3,8 @@ import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 
 class OptionsAppBar extends StatelessWidget {
-  const OptionsAppBar({super.key});
+  const OptionsAppBar({super.key, required this.textTitle});
+  final String textTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class OptionsAppBar extends StatelessWidget {
             color: AppColors.secondTextColor,
           ),
         ),
-        Text('Options', style: TextStyles.font22SemiBold(context)),
+        Text(textTitle, style: TextStyles.font22SemiBold(context)),
       ],
     );
   }
