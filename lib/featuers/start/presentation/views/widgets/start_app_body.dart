@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_images.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
+import 'package:login_ui/featuers/login/presentation/views/login_view.dart';
 import 'package:login_ui/featuers/start/presentation/views/widgets/custom_elevated_start_btm.dart';
 
 class StartAppBody extends StatelessWidget {
@@ -44,7 +45,12 @@ class StartAppBody extends StatelessWidget {
             children: [
               const Spacer(),
               CustomButtom(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return const LoginView();
+                  }));
+                },
                 color: AppColors.secondaryColorTheme,
                 textColor: AppColors.mainColorTheme,
                 title: 'Login',
