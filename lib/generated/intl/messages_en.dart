@@ -4,7 +4,7 @@
 // function name.
 
 // Ignore issues from commonly used lints in this file.
-// ignore_for_file:unnecessary_brace_in_string_interps, unnecessary_new, depend_on_referenced_packages
+// ignore_for_file:unnecessary_brace_in_string_interps, unnecessary_new
 // ignore_for_file:prefer_single_quotes,comment_references, directives_ordering
 // ignore_for_file:annotate_overrides,prefer_generic_function_type_aliases
 // ignore_for_file:unused_import, file_names, avoid_escaping_inner_quotes
@@ -21,5 +21,33 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{};
+  static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "alreadyHaveAccount":
+            MessageLookupByLibrary.simpleMessage("Already have an account"),
+        "appName": MessageLookupByLibrary.simpleMessage("Start App"),
+        "createAccountMessage": MessageLookupByLibrary.simpleMessage(
+            "Create an account so you can explore all the existing jobs"),
+        "createAccountTitle":
+            MessageLookupByLibrary.simpleMessage("Create Account"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("Create new account"),
+        "discoverYour": MessageLookupByLibrary.simpleMessage("Discover Your"),
+        "dreamJobHere": MessageLookupByLibrary.simpleMessage("Dream Job Here"),
+        "emailHint": MessageLookupByLibrary.simpleMessage("Email"),
+        "exploreMessage": MessageLookupByLibrary.simpleMessage(
+            "Explore all the existing job roles based on your interest and study major"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("Forgot Your Password?"),
+        "fullNameHint": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginTitle": MessageLookupByLibrary.simpleMessage("Login here"),
+        "orContinueWith":
+            MessageLookupByLibrary.simpleMessage("Or continue with"),
+        "passwordHint": MessageLookupByLibrary.simpleMessage("Password"),
+        "registerButton": MessageLookupByLibrary.simpleMessage("Register"),
+        "signInButton": MessageLookupByLibrary.simpleMessage("Sign in"),
+        "signUpButton": MessageLookupByLibrary.simpleMessage("Sign Up"),
+        "welcomeMessage": MessageLookupByLibrary.simpleMessage(
+            "Welcome back you\'ve been missed!")
+      };
 }

@@ -1,1 +1,23 @@
-{}
+{
+    "appName": "Start App",
+    "discoverYour": "Discover Your",
+    "dreamJobHere": "Dream Job Here",
+    "exploreMessage": "Explore all the existing job roles based on your interest and study major",
+    "loginButton": "Login",
+    "registerButton": "Register",
+    "loginTitle": "Login here",
+    "welcomeMessage": "Welcome back you've been missed!",
+    "emailHint": "Email",
+    "passwordHint": "Password",
+    "signInButton": "Sign in",
+    "createNewAccount": "Create new account",
+    "orContinueWith": "Or continue with",
+    "forgotPassword": "Forgot Your Password?",
+    "createAccountTitle": "Create Account",
+    "createAccountMessage": "Create an account so you can explore all the existing jobs",
+    "signUpButton": "Sign Up",
+    "alreadyHaveAccount": "Already have an account",
+    "fullNameHint": "Full Name"
+
+  }
+  

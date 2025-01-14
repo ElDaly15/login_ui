@@ -1,1 +1,22 @@
-{}
+{
+    "appName": "تطبيق البداية",
+    "discoverYour": "اكتشف",
+    "dreamJobHere": "وظيفة أحلامك هنا",
+    "exploreMessage": "استكشف جميع الوظائف المتاحة بناءً على اهتماماتك وتخصصك الدراسي",
+    "loginButton": "تسجيل الدخول",
+    "registerButton": "التسجيل",
+    "loginTitle": "سجّل الدخول هنا",
+    "welcomeMessage": "مرحبًا بعودتك، لقد افتقدناك!",
+    "emailHint": "البريد الإلكتروني",
+    "passwordHint": "كلمة المرور",
+    "signInButton": "تسجيل الدخول",
+    "createNewAccount": "إنشاء حساب جديد",
+    "orContinueWith": "أو استمر باستخدام" ,
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "createAccountTitle": "إنشاء حساب",
+    "createAccountMessage": "قم بإنشاء حساب حتى تتمكن من استكشاف جميع الوظائف المتاحة",
+    "signUpButton": "إنشاء حساب",
+    "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+    "fullNameHint": "الاسم الكامل"
+}
+  

@@ -6,6 +6,7 @@ import 'package:login_ui/core/utils/app_styles.dart';
 import 'package:login_ui/featuers/login/presentation/views/login_view.dart';
 import 'package:login_ui/featuers/register/presentation/views/register_view.dart';
 import 'package:login_ui/featuers/start/presentation/views/widgets/custom_elevated_start_btm.dart';
+import 'package:login_ui/generated/l10n.dart';
 
 class StartAppBody extends StatelessWidget {
   const StartAppBody({super.key});
@@ -24,19 +25,19 @@ class StartAppBody extends StatelessWidget {
           ),
           SizedBox(height: MediaQuery.of(context).size.height * 0.03),
           Text(
-            'Discover Your',
+            S.of(context).discoverYour,
             style: TextStyles.font24SemiBold(context)
                 .copyWith(color: AppColors.secondaryColorTheme, fontSize: 32),
           ),
           Text(
-            'Dream Job Here',
+            S.of(context).dreamJobHere,
             style: TextStyles.font24SemiBold(context)
                 .copyWith(color: AppColors.secondaryColorTheme, fontSize: 32),
           ),
           const SizedBox(height: 20),
           Center(
             child: Text(
-              'Explore all the existing job roles based on your interest and study major',
+              S.of(context).exploreMessage,
               style: TextStyles.font18Medium(context).copyWith(),
               textAlign: TextAlign.center,
             ),
@@ -54,7 +55,7 @@ class StartAppBody extends StatelessWidget {
                 },
                 color: AppColors.secondaryColorTheme,
                 textColor: AppColors.mainColorTheme,
-                title: 'Login',
+                title: S.of(context).loginButton,
               ),
               const SizedBox(
                 width: 22,
@@ -68,7 +69,7 @@ class StartAppBody extends StatelessWidget {
                 },
                 color: AppColors.mainColorTheme,
                 textColor: AppColors.secondTextColor,
-                title: 'Register',
+                title: S.of(context).registerButton,
               ),
               const Spacer(),
             ],
