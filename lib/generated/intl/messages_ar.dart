@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Options": MessageLookupByLibrary.simpleMessage("الاعدادات"),
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟"),
         "appName": MessageLookupByLibrary.simpleMessage("تطبيق البداية"),
@@ -31,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+        "darkMode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
         "discoverYour": MessageLookupByLibrary.simpleMessage("اكتشف"),
         "dreamJobHere":
             MessageLookupByLibrary.simpleMessage("وظيفة أحلامك هنا"),
@@ -40,12 +42,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
         "fullNameHint": MessageLookupByLibrary.simpleMessage("الاسم الكامل"),
+        "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "loginButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("سجّل الدخول هنا"),
         "orContinueWith":
             MessageLookupByLibrary.simpleMessage("أو استمر باستخدام"),
         "passwordHint": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "registerButton": MessageLookupByLibrary.simpleMessage("التسجيل"),
+        "selectLanguage": MessageLookupByLibrary.simpleMessage("اختر اللغة"),
         "signInButton": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "signUpButton": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "welcomeMessage":

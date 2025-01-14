@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "Options": MessageLookupByLibrary.simpleMessage("Options"),
         "alreadyHaveAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account"),
         "appName": MessageLookupByLibrary.simpleMessage("Start App"),
@@ -31,6 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Create Account"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create new account"),
+        "darkMode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
         "discoverYour": MessageLookupByLibrary.simpleMessage("Discover Your"),
         "dreamJobHere": MessageLookupByLibrary.simpleMessage("Dream Job Here"),
         "emailHint": MessageLookupByLibrary.simpleMessage("Email"),
@@ -39,12 +41,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Your Password?"),
         "fullNameHint": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "language": MessageLookupByLibrary.simpleMessage("Language"),
         "loginButton": MessageLookupByLibrary.simpleMessage("Login"),
         "loginTitle": MessageLookupByLibrary.simpleMessage("Login here"),
         "orContinueWith":
             MessageLookupByLibrary.simpleMessage("Or continue with"),
         "passwordHint": MessageLookupByLibrary.simpleMessage("Password"),
         "registerButton": MessageLookupByLibrary.simpleMessage("Register"),
+        "selectLanguage":
+            MessageLookupByLibrary.simpleMessage("Select Language"),
         "signInButton": MessageLookupByLibrary.simpleMessage("Sign in"),
         "signUpButton": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "welcomeMessage": MessageLookupByLibrary.simpleMessage(

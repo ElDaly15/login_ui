@@ -17,7 +17,11 @@
     "createAccountMessage": "Create an account so you can explore all the existing jobs",
     "signUpButton": "Sign Up",
     "alreadyHaveAccount": "Already have an account",
-    "fullNameHint": "Full Name"
+    "fullNameHint": "Full Name",
+    "Options": "Options",
+    "language": "Language",
+    "darkMode": "Dark Mode",
+    "selectLanguage": "Select Language"
 
   }
   

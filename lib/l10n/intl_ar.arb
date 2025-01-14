@@ -17,6 +17,10 @@
     "createAccountMessage": "قم بإنشاء حساب حتى تتمكن من استكشاف جميع الوظائف المتاحة",
     "signUpButton": "إنشاء حساب",
     "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
-    "fullNameHint": "الاسم الكامل"
+    "fullNameHint": "الاسم الكامل",
+    "Options": "الاعدادات",
+    "language": "اللغة",
+    "darkMode": "الوضع الداكن",
+    "selectLanguage": "اختر اللغة"
 }
   

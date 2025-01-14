@@ -28,13 +28,16 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  bloc: ^9.0.0
   cupertino_icons: ^1.0.8
   device_preview: ^1.2.0
   flutter:
     sdk: flutter
+  flutter_bloc: ^9.0.0
   flutter_svg: ^2.0.17
   font_awesome_flutter: ^10.8.0
   msh_checkbox: ^2.0.1
+  shared_preferences: ^2.3.5
 
 dev_dependencies:
   flutter_lints: ^4.0.0

@@ -3,6 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 
+import '../../../../../generated/l10n.dart';
+
 class ContainerOfDarkMode extends StatefulWidget {
   const ContainerOfDarkMode({super.key});
 
@@ -34,7 +36,7 @@ class _ContainerOfDarkModeState extends State<ContainerOfDarkMode> {
               width: 15,
             ),
             Text(
-              'Dark Mode',
+              S.of(context).darkMode,
               style: TextStyles.font18Medium(context),
             ),
             const Spacer(),

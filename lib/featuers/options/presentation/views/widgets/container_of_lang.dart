@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:login_ui/core/manager/manage_language_cubit/manage_language_cubit.dart';
 import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 import 'package:login_ui/featuers/options/presentation/views/language_select_view.dart';
+import 'package:intl/intl.dart';
+
+import '../../../../../generated/l10n.dart';
 
 class ContainerOfLanguage extends StatelessWidget {
   const ContainerOfLanguage({super.key});
@@ -28,16 +33,20 @@ class ContainerOfLanguage extends StatelessWidget {
               width: 15,
             ),
             Text(
-              'Language',
+              S.of(context).language,
               style: TextStyles.font18Medium(context),
             ),
             const Spacer(),
             Row(
               children: [
-                Text(
-                  'English',
-                  style: TextStyles.font18Medium(context)
-                      .copyWith(color: AppColors.firstTextColor),
+                BlocBuilder<ManageLanguageCubit, ManageLanguageState>(
+                  builder: (context, state) {
+                    return Text(
+                      state.locale == const Locale('en') ? 'English' : 'عربي',
+                      style: TextStyles.font18Medium(context)
+                          .copyWith(color: AppColors.firstTextColor),
+                    );
+                  },
                 ),
                 IconButton(
                   padding: const EdgeInsets.all(0),
