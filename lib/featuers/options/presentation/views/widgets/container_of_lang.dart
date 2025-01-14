@@ -5,7 +5,6 @@ import 'package:login_ui/core/manager/manage_language_cubit/manage_language_cubi
 import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 import 'package:login_ui/featuers/options/presentation/views/language_select_view.dart';
-import 'package:intl/intl.dart';
 
 import '../../../../../generated/l10n.dart';
 

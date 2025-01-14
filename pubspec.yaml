@@ -36,6 +36,7 @@ dependencies:
   flutter_bloc: ^9.0.0
   flutter_svg: ^2.0.17
   font_awesome_flutter: ^10.8.0
+  intl: ^0.19.0
   msh_checkbox: ^2.0.1
   shared_preferences: ^2.3.5
 

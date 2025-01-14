@@ -1,3 +1,5 @@
+// ignore_for_file: depend_on_referenced_packages, unnecessary_import
+
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:login_ui/core/db/cached_helper.dart';
