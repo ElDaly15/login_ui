@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:login_ui/core/db/cached_helper.dart';
 import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 
+import '../../../../../core/manager/toggle_darkMode_cubit/toggle_dark_mode_cubit.dart';
 import '../../../../../generated/l10n.dart';
 
 class ContainerOfDarkMode extends StatefulWidget {
@@ -13,7 +16,7 @@ class ContainerOfDarkMode extends StatefulWidget {
 }
 
 class _ContainerOfDarkModeState extends State<ContainerOfDarkMode> {
-  bool valueOfDark = false;
+  bool valueOfDark = CacheHelper().getData(key: 'isDark') ?? false;
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +45,20 @@ class _ContainerOfDarkModeState extends State<ContainerOfDarkMode> {
             const Spacer(),
             Switch(
               activeTrackColor: AppColors.secondaryColorTheme,
+              thumbColor: WidgetStateProperty.resolveWith<Color>(
+                (Set<WidgetState> states) {
+                  if (states.contains(WidgetState.pressed)) {
+                    return AppColors.mainColorTheme;
+                  }
+                  return Theme.of(context).primaryColor;
+                },
+              ),
               value: valueOfDark,
               onChanged: (value) {
+                BlocProvider.of<ToggleDarkModeCubit>(context)
+                    .toggleDarkMode(value);
                 valueOfDark = value;
+
                 setState(() {});
               },
             ),
