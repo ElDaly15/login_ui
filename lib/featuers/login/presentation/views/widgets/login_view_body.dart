@@ -39,7 +39,9 @@ class LoginViewBody extends StatelessWidget {
               width: 200,
               child: Text(
                 S.of(context).welcomeMessage,
-                style: TextStyles.font20Bold(context),
+                style: TextStyles.font20Bold(context).copyWith(
+                  color: Theme.of(context).primaryColor,
+                ),
                 textAlign: TextAlign.center,
               ),
             ),

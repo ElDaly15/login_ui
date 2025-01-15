@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/featuers/options/presentation/views/widgets/lanaguage_select_view_body.dart';
 
 class LanguageSelectView extends StatelessWidget {
@@ -7,9 +6,9 @@ class LanguageSelectView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: AppColors.mainColorTheme,
-      body: LanaguageSelectViewBody(),
+    return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      body: const LanaguageSelectViewBody(),
     );
   }
 }

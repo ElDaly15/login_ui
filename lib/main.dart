@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:login_ui/core/db/cached_helper.dart';
 import 'package:login_ui/core/manager/manage_language_cubit/manage_language_cubit.dart';
+import 'package:login_ui/core/utils/theme.dart';
 import 'package:login_ui/featuers/start/presentation/views/start_app_view.dart';
 import 'package:login_ui/generated/l10n.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -31,6 +32,7 @@ class LoginUIApp extends StatelessWidget {
     return BlocBuilder<ManageLanguageCubit, ManageLanguageState>(
       builder: (context, state) {
         return MaterialApp(
+          theme: lightTheme,
           localizationsDelegates: const [
             S.delegate,
             GlobalMaterialLocalizations.delegate,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/featuers/register/presentation/views/widgets/register_view_body.dart';
 
 class RegisterView extends StatelessWidget {
@@ -7,9 +6,9 @@ class RegisterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: AppColors.mainColorTheme,
-      body: RegisterViewBody(),
+    return Scaffold(
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      body: const RegisterViewBody(),
     );
   }
 }

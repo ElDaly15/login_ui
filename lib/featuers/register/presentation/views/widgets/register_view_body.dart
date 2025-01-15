@@ -37,7 +37,9 @@ class RegisterViewBody extends StatelessWidget {
             SizedBox(
               child: Text(
                 S.of(context).createAccountMessage,
-                style: TextStyles.font20Bold(context),
+                style: TextStyles.font20Bold(context).copyWith(
+                  color: Theme.of(context).primaryColor,
+                ),
                 textAlign: TextAlign.center,
               ),
             ),

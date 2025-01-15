@@ -31,14 +31,16 @@ class ContainerOfSelectedLanguage extends StatelessWidget {
         ),
         Text(
           title,
-          style: TextStyles.font20Regular(context),
+          style: TextStyles.font20Regular(context).copyWith(
+            color: Theme.of(context).primaryColor,
+          ),
         ),
         const Spacer(),
         MSHCheckbox(
           size: 22,
           value: isChecked,
           colorConfig: MSHColorConfig.fromCheckedUncheckedDisabled(
-            uncheckedColor: const Color.fromARGB(255, 73, 31, 32),
+            uncheckedColor: const Color.fromARGB(255, 48, 45, 45),
             checkedColor: AppColors.secondaryColorTheme,
           ),
           style: MSHCheckboxStyle.stroke,

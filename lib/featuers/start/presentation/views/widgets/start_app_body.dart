@@ -38,7 +38,8 @@ class StartAppBody extends StatelessWidget {
           Center(
             child: Text(
               S.of(context).exploreMessage,
-              style: TextStyles.font18Medium(context).copyWith(),
+              style: TextStyles.font18Medium(context)
+                  .copyWith(color: Theme.of(context).primaryColor),
               textAlign: TextAlign.center,
             ),
           ),
@@ -67,8 +68,8 @@ class StartAppBody extends StatelessWidget {
                     return const RegisterView();
                   }));
                 },
-                color: AppColors.mainColorTheme,
-                textColor: AppColors.secondTextColor,
+                color: Theme.of(context).scaffoldBackgroundColor,
+                textColor: Theme.of(context).primaryColor,
                 title: S.of(context).registerButton,
               ),
               const Spacer(),

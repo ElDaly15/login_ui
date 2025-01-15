@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:login_ui/core/utils/app_colors.dart';
 import 'package:login_ui/core/utils/app_styles.dart';
 
 class TextBtm extends StatelessWidget {
@@ -13,7 +12,7 @@ class TextBtm extends StatelessWidget {
       child: Text(
         title,
         style: TextStyles.font14SemiBold(context)
-            .copyWith(color: AppColors.firstTextColor),
+            .copyWith(color: Theme.of(context).cardColor),
       ),
     );
   }
